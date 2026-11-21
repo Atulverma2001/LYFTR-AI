@@ -8,8 +8,8 @@ A multi-turn LLM chatbot (React + FastAPI + LiteLLM + SQLite) with automatic API
 
 | | URL |
 |---|---|
-| Frontend | **Pending: not deployed yet** |
-| Backend | **Pending: not deployed yet** |
+| Frontend | **https://lyftr-ai-chi.vercel.app/** |
+| Backend | **https://lyftr-ai-backend-fw14.onrender.com** |
 
 Deployment notes are at the end of this file. Set `ENABLE_FAILURE_SIMULATION=true` on the deployed backend.
 
