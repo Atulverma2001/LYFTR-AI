@@ -1,0 +1,8 @@
+fastapi==0.165.0
+uvicorn[standard]==0.54.0
+litellm==1.110.2
+sqlalchemy==2.1.9
+pydantic==2.14.4
+# Imported by LiteLLM's response-cache code path (not pulled in by the base package)
+orjson==3.13.0
+soundfile==0.14.0

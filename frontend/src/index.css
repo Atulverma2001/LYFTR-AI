@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-canvas font-sans text-ink antialiased; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-accent; outline-style: solid; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-control px-3 py-2 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-accent text-white hover:bg-accent-strong; }
+  .btn-ghost { @apply btn border border-line bg-surface text-ink hover:bg-canvas; }
+  .field { @apply w-full rounded-control border border-line bg-surface px-3 py-2 text-sm placeholder:text-muted/70; }
+  .prose-chat p { @apply my-2 first:mt-0 last:mb-0; }
+  .prose-chat ul { @apply my-2 list-disc pl-5; }
+  .prose-chat ol { @apply my-2 list-decimal pl-5; }
+  .prose-chat pre { @apply my-2 overflow-x-auto rounded-control bg-ink p-3 font-mono text-[13px] text-white; }
+  .prose-chat code:not(pre code) { @apply rounded bg-canvas px-1 py-0.5 font-mono text-[13px]; }
+  .prose-chat a { @apply text-accent underline; }
+}
