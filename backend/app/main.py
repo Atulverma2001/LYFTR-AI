@@ -39,7 +39,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app = FastAPI(title="LYFTR AI", version=APP_VERSION, lifespan=lifespan)
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=list(settings.allowed_origins),
+        allow_origins=[
+        "https://lyftr-ai-chi.vercel.app",
+    ],
         allow_methods=["GET", "POST", "OPTIONS"],
         allow_headers=["*"],
     )
